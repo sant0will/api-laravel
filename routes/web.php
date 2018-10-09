@@ -11,10 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::resource('api/', 'Api');
-
 Route::get('api/store_user', 'Api@store_user');
