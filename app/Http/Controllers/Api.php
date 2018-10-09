@@ -21,9 +21,9 @@ class Api extends Controller
         $user->email = $_GET["email"];
 
         if($user->save()){
-            return true;
+            echo 1;
         }else{
-            return false;
+            echo 0;
         }
     }    
 }
