@@ -13,7 +13,7 @@ use App\Models\User;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('api/store_user', , function () {
+Route::get('api/', , function () {
     echo User::all()->toJson();
 });
 Route::get('api/store_user', , function () {
