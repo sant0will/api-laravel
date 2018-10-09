@@ -9,7 +9,7 @@ class Api extends Controller
 {
     public function index()
     {
-        echo User::all();
+        echo User::all()->toJson();
     }
     
     public function store_user()
