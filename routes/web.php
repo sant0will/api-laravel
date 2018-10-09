@@ -14,6 +14,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('api/', function () {
+    dd("chegou");
     echo User::all()->toJson();
 });
 Route::get('api/store_user', function () {
