@@ -13,10 +13,10 @@ use App\Models\User;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('api/', , function () {
+Route::get('api/', function () {
     echo User::all()->toJson();
 });
-Route::get('api/store_user', , function () {
+Route::get('api/store_user', function () {
     $user = new User();
     $user->first_name = $_GET["first_name"];
     $user->last_name = $_GET["last_name"];
