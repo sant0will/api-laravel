@@ -19,11 +19,11 @@ class Api extends Controller
         $user->last_name = $_GET["last_name"];
         $user->phone = $_GET["phone"];
         $user->email = $_GET["email"];
-
-        if($user->save()){
-            echo 1;
-        }else{
-            echo 0;
-        }
+        echo $_GET["first_name"];
+        //if($user->save()){
+          //  echo 1;
+        //}else{
+          //  echo 0;
+        //}
     }    
 }
