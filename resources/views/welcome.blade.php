@@ -72,8 +72,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">Listar</a>
                     <a href="#">Cadastrar</a>
+                    <a href="#">Listar</a>
                 </div>
             </div>
         </div>
