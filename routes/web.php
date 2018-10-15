@@ -19,3 +19,5 @@ Route::resource('api/', 'Api');
 Route::get('api/store_user', 'Api@store_user');
 
 Route::resource('cadastro/', 'UsersController');
+
+Route::get('cadastro/mostrar', 'UsersController@mostrar');

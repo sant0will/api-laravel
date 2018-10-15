@@ -2,10 +2,10 @@
     margin-top: 20px;
   }
   body{
-    background:url('http://www.wallpaperup.com/uploads/wallpapers/2012/08/30/12087/3574f899daef41d2f145eba13ff7840f.jpg');
+    background:url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
     background-size:100% 100%;
     background-attachment: fixed; 
-    background-repeat:no-repeat;
+    background-repeat: repeat;
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 40px;
   }
@@ -181,3 +181,51 @@
     left:0!important;
     top: 1px!important;
   }
+
+  .table{
+    background-color: hsla(207, 67%, 86%, 0.6); 
+    padding: 5%;
+    border-radius: 5px;
+  }
+  .btn-add{
+    margin-bottom: 2%;
+  }
+
+  .alert-message
+{
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 3px solid #eee;
+}
+.alert-message h4
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.alert-message p:last-child
+{
+    margin-bottom: 0;
+}
+.alert-message code
+{
+    background-color: #fff;
+    border-radius: 3px;
+}
+.alert-message-success
+{
+    background-color: rgb(154, 241, 156);
+    border-color: #3C763D;
+}
+.alert-message-success h4
+{
+    color: #3C763D;
+}
+.alert-message-danger
+{
+    background-color: rgb(197, 112, 112);
+    border-color: #d9534f;
+}
+.alert-message-danger h4
+{
+    color: #d9534f;
+}

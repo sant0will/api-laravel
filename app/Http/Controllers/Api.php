@@ -14,7 +14,6 @@ class Api extends Controller
     
     public function store_user()
     {
-        dd($_SERVER['HTTP_REFERER']);
         $user = new User();
         $user->first_name = $_GET["first_name"];
         $user->last_name = $_GET["last_name"];

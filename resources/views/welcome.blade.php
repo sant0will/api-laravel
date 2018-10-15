@@ -73,7 +73,7 @@
 
                 <div class="links">
                     <a href="cadastro/create">Cadastrar</a>
-                    <a href="cadastro/show">Listar</a>
+                    <a href="cadastro">Listar</a>
                 </div>
             </div>
         </div>

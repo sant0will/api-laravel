@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Users;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
@@ -14,7 +15,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::all();
+        return view('users/show', compact('users'));
     }
 
     /**
@@ -23,7 +25,7 @@ class UsersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    {    
         return view('users/create');
     }
 
@@ -35,51 +37,17 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        // dd($request);
+        $user = new User();
+        $user->first_name = $request->name;
+        $user->last_name = $request->last_name;
+        $user->phone = $request->phone;
+        $user->email = $request->email;
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Users  $users
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Users $users)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Users  $users
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Users $users)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Users  $users
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Users $users)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Users  $users
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Users $users)
-    {
-        //
+        if($user->save()){
+            return redirect('/cadastro')->with('success', 'Cadastro realizado com sucesso.');
+        }else{
+            return redirect('/cadastro')->with('error', 'Falha ao concluir cadastro.');
+        }
     }
 }
