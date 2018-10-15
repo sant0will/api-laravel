@@ -72,8 +72,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">Cadastrar</a>
-                    <a href="#">Listar</a>
+                    <a href="cadastro/create">Cadastrar</a>
+                    <a href="cadastro/show">Listar</a>
                 </div>
             </div>
         </div>
