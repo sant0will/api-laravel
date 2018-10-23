@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Cadastro</title>
-        <link rel="icon" href="{!! asset('doctoraux-icon.png') !!}" sizes="16x16"/>
+        <link rel="icon" href="{!! asset('one.png') !!}" sizes="16x16"/>
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
