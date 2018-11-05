@@ -43,8 +43,12 @@ class ApiRestController extends Controller
         $user->email = $request['email'];
         
         if($user->save()){
-            return "deu bom";
+            $response =  1;
+        }else{
+            $response = 0;
         }
+
+        return $response;
     }
 
     /**
