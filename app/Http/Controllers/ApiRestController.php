@@ -35,7 +35,16 @@ class ApiRestController extends Controller
      */
     public function store(Request $request)
     {
-        return "Passou";
+        // return $request['first_name'];
+        $user = new User();
+        $user->first_name = $request['first_name'];
+        $user->last_name = $request['last_name'];
+        $user->phone = $request['phone'];
+        $user->email = $request['email'];
+        
+        if($user->save()){
+            return "deu bom";
+        }
     }
 
     /**
