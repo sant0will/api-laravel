@@ -35,7 +35,7 @@ class ApiRestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "Passou";
     }
 
     /**
