@@ -48,7 +48,10 @@ class ApiRestController extends Controller
             $response = 0;
         }
 
-        return $response;
+        return response()->json([
+            'result' => 
+                $response
+            ]);
     }
 
     /**
