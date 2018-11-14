@@ -2,7 +2,8 @@
     margin-top: 20px;
   }
   body{
-    background:url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    /* background:url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'); */
+    background-color: #000;
     background-size:100% 100%;
     background-attachment: fixed; 
     background-repeat: repeat;
@@ -10,7 +11,7 @@
     padding-bottom: 40px;
   }
   .auth h1{
-    color:#fff!important;
+    color:#009688!important;
     font-weight:300;
     font-family: 'Open Sans', sans-serif;
   }
@@ -27,18 +28,18 @@
   }
   .auth .auth-box{
     background-color:#fff;
-    max-width:460px;
+    max-width:600px;
     margin:0 auto;
-    border:1px solid rgba(255, 255, 255, 0.4);;
-    background-color: rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.2);
+    /* border:1px solid rgba(255, 255, 255, 0.4);; */
+    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     margin-top:40px;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.32);
+    /* -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.32);
     -moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.32);
     box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.32);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 3px; */
     -webkit-transition: background 1s ease-in-out;
     -moz-transition: background 1s ease-in-out;
     -ms-transition: background 1s ease-in-out;
@@ -82,12 +83,12 @@
   .auth form input[type="search"]{
     border:none;
     padding:10px 0 10px 0;
-    background-color: rgba(255, 255, 255, 0)!important;
-    background: rgba(255, 255, 255, 0);
-    color:#fff;
+    background-color: rgba(0, 0, 0, 1)!important;
+    background: rgba(0, 0, 0, 1);
+    /* color:#fff; */
     font-size:16px;
-    border-bottom:1px dotted #fff;
-    border-radius:0;
+    border-radius: 0%;
+    border-bottom:2px solid #009688;
     box-shadow:none!important;
     height:auto;
   }
@@ -99,7 +100,7 @@
     color:#fff;
   }
   .auth form label{
-      color:#fff;
+      color:#009688;
       font-size:21px;
       font-weight:300;
   }
@@ -183,7 +184,6 @@
   }
 
   .table{
-    background-color: hsla(207, 67%, 86%, 0.6); 
     padding: 5%;
     border-radius: 5px;
   }
@@ -228,4 +228,23 @@
 .alert-message-danger h4
 {
     color: #d9534f;
+}
+.color-site{
+    color: #009688;
+}
+.input-create{
+    color: #009688;
+}
+.btn-site{
+    background-color: #009688; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-bottom: 2%;
 }

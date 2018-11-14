@@ -16,8 +16,8 @@
     </head>
     <body>
         <div class="container auth">
-            <h1 class="text-center"> Cadastro de Usuários </h1>
-            <div id="big-form" class="well auth-box">
+            <h1 class="text-center color-site" style="margin-bottom: 5%;"> Cadastro de Usuários </h1>
+            <div id="big-form" class="auth-box">
               <form method="post" action="{{url('/cadastro')}}">
                 @csrf
                 <fieldset>    
@@ -25,35 +25,37 @@
                    
 
                   <div class="form-group">
-                    <label class=" control-label" for="textinput">Nome</label>  
+                    <label class="input-create control-label" for="textinput">Nome</label>  
                     <div class="">
                       <input name="name" class="form-control input-md" type="text" required>
                     </div>
                   </div>
         
                   <div class="form-group">
-                    <label class=" control-label" for="textinput">Sobrenome</label>
+                    <label class="input-create control-label" for="textinput">Sobrenome</label>
                     <div class="">
                       <input name="last_name" class="form-control input-md" type="text" required>
                     </div>
                   </div>
 
                   <div class="form-group">
-                    <label class=" control-label" for="textinput">Telefone</label>  
+                    <label class="input-create control-label" for="textinput">Telefone</label>  
                     <div class="">
                       <input name="phone" class="form-control input-md" type="text" required>
                     </div>
                   </div>
         
                   <div class="form-group">
-                    <label class=" control-label" for="textinput">Email</label>
+                    <label class="input-create control-label" for="textinput">Email</label>
                     <div class="">
                       <input name="email" class="form-control input-md" type="email" required>
                     </div>
                   </div>
 
-                  <a href="/" class="btn btn-primary pull-left btn-add">Voltar</a>        
-                  <button type="submit" class="btn btn-primary pull-right"> Enviar </button>
+                  
+                  <a href="/" class="pull-left btn-site"> Voltar </a>
+
+                  <button type="submit" class="pull-right btn-site"> Enviar </button>
                 </fieldset>
               </form>
             </div>

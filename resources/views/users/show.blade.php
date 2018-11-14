@@ -11,10 +11,11 @@
 
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <link href="https:////cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" id="bootstrap-css">        
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-        <script src="https:////cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>        
+        <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css" rel="stylesheet" id="bootstrap-css">   
         <link rel="stylesheet" href="{{ URL::asset('/css/style-cadastro.css') }}">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>  
         <script>
         $(document).ready( function () {
             $('#users_tb').DataTable();
@@ -23,7 +24,7 @@
     </head>
     <body>
         <div class="container auth">
-            <h1 class="text-center"> Usuários </h1>
+            <h1 class="text-center color-site"> Usuários </h1>
             <div class="table">
                 @if(session()->has('success'))
                     @if(session()->get('success'))
@@ -38,7 +39,7 @@
                       </div>
                     @endif
                   @endif 
-                <a href="cadastro/create" class="btn btn-primary pull-right btn-add">Cadastrar novo usuário</a>
+                <a href="cadastro/create" class="pull-right btn-site">Cadastrar novo usuário</a>
                 <table id="users_tb" class="stripe">
                     <thead>
                         <tr>
@@ -50,7 +51,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($users as $user)                        
+                        @foreach ($users as $user)                       
                             <tr>
                                 <td>{{$user->id}}</td>
                                 <td>{{$user->first_name}}</td>
