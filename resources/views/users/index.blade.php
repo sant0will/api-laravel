@@ -83,7 +83,7 @@ $(document).ready(function() {
                 $('#botao').attr("disabled", true);
             }else{
                 console.log("ligado");
-                $('#botao').removeAttr("disabled");
+                $('#botao').attr("disabled", false);
             }
           },
           complete: function(){
