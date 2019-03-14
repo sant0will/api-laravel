@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
-class ApiRestController extends Controller
+class BotaoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +13,7 @@ class ApiRestController extends Controller
     {
 //        dd("deu");
 //        $botao = DB::table('botao')->get();
-//         dd($botao);
-        return echo "deu";
+        return echo $botao;
     }
     /**
      * Show the form for creating a new resource.
