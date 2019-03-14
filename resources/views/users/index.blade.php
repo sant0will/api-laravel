@@ -70,6 +70,16 @@ input:checked[type="checkbox"]:after {
 
 </style>
 
+<script>
+    $.ajax({
+      url: "botao",
+      cache: false,
+      success: function(return){
+        console.log(return);
+      }
+    });
+</script>
+
 <div class="center">
 	<input type="checkbox" name=""> 
 </div>
