@@ -77,6 +77,9 @@ input:checked[type="checkbox"]:after {
       success:function(d){
         //var json = JSON.parse(d);
         console.log(d);
+      },
+      complete: function(){
+           setTimeout(getData, 5000);
       }
     });
 </script>
