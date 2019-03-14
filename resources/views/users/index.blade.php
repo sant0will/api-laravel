@@ -78,7 +78,11 @@ $(document).ready(function() {
           cache: false,
           success:function(d){
             //var json = JSON.parse(d);
-            console.log(d["result"][0]);
+            if(d["result"][0]["botao"] == 0){
+                console.log("desligado");
+            }else{
+                console.log("ligado");
+            }
           },
           complete: function(){
                setTimeout(getData, 5000);
