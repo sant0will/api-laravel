@@ -72,7 +72,7 @@ input:checked[type="checkbox"]:after {
 
 <script>
     $.ajax({
-      url: "botao",
+      url: "/botao",
       cache: false,
       success: function(return){
         console.log(return);
