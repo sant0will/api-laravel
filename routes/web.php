@@ -23,3 +23,7 @@ Route::resource('cadastro/', 'UsersController');
 Route::resource('botao/', 'BotaoController');
 
 Route::get('cadastro/mostrar', 'UsersController@mostrar');
+
+Route::get('botao/ajax', function () {
+    return DB::table('botao')->get();
+});
