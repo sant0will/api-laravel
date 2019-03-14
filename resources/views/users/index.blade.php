@@ -85,7 +85,7 @@ $(document).ready(function() {
             }
           },
           complete: function(){
-               setTimeout(getData, 2000);
+               setTimeout(getData, 10000);
           }
         });
     }
@@ -100,6 +100,9 @@ $(document).ready(function() {
         data: {
             'botao': 1
         }, 
+        success: function(d){
+            console.log(d);
+        }
     });
 </script>
 
