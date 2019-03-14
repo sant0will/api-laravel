@@ -69,31 +69,29 @@ input:checked[type="checkbox"]:after {
 </style>
 
 <script>
-$(document).ready(function() {
-    function getData() {
-        $.ajax({
-          url: "/botao/ajax",
-          cache: false,
-          success:function(d){
-            //var json = JSON.parse(d);
-            if(d["result"][0]["botao"] == 0){
-                console.log("desligado");
-                $('#botao').prop("checked", false);
-            }else{
-                console.log("ligado");
-                $('#botao').prop("checked", true);
-            }
-          },
-          complete: function(){
-               setTimeout(getData, 10000);
-          }
-        });
-    }
-    getData();
-});    
-</script>
-
-<script>
+    $(document).ready(function() {
+        function getData() {
+            $.ajax({
+              url: "/botao/ajax",
+              cache: false,
+              success:function(d){
+                //var json = JSON.parse(d);
+                if(d["result"][0]["botao"] == 0){
+                    console.log("desligado");
+                    $('#botao').prop("checked", false);
+                }else{
+                    console.log("ligado");
+                    $('#botao').prop("checked", true);
+                }
+              },
+              complete: function(){
+                   setTimeout(getData, 10000);
+              }
+            });
+        }
+        getData();
+    });    
+    
     $('#checkbox1').change(function() {
         $.ajax({
         url:"/botao/ajax/register",
