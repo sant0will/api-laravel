@@ -13,7 +13,8 @@ class BotaoController extends Controller
     {
 //        dd("deu");
        $botao = DB::table('botao')->get();
-        return echo $botao;
+
+        return view('botao.index', ['botao' => $botao]);
     }
     /**
      * Show the form for creating a new resource.
