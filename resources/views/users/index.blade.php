@@ -97,5 +97,5 @@ $(document).ready(function() {
 </script>
 
 <div class="center">
-	<input type="checkbox" id="botao" name=""> 
+	<input type="checkbox" id="botao"> 
 </div>
