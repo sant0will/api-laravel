@@ -31,3 +31,7 @@ Route::get('botao/ajax', function () {
         $response
     ]);
 });
+
+Route::get('botao/ajax/register', function ($botao) {
+    return $botao;
+});
