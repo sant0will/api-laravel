@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use DB;
 class ApiRestController extends Controller
 {
     /**
@@ -10,7 +11,8 @@ class ApiRestController extends Controller
      */
     public function index()
     {
-       
+       $botao = DB::table('botao')->get();
+        dd($botao);
     }
     /**
      * Show the form for creating a new resource.
