@@ -72,6 +72,8 @@ input:checked[type="checkbox"]:after {
 
 <script>
 $(document).ready(function() {
+    let botao = "<?php echo $botao->botao ?>";
+    console.log(botao);
     function getData() {
         $.ajax({
           url: "/botao/ajax",
