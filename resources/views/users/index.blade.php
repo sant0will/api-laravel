@@ -80,8 +80,10 @@ $(document).ready(function() {
             //var json = JSON.parse(d);
             if(d["result"][0]["botao"] == 0){
                 console.log("desligado");
+                $('#botao').attr("disabled", true);
             }else{
                 console.log("ligado");
+                $('#botao').removeAttr("disabled");
             }
           },
           complete: function(){
@@ -95,5 +97,5 @@ $(document).ready(function() {
 </script>
 
 <div class="center">
-	<input type="checkbox" name=""> 
+	<input type="checkbox" id="botao" name=""> 
 </div>
