@@ -80,10 +80,10 @@ $(document).ready(function() {
             //var json = JSON.parse(d);
             if(d["result"][0]["botao"] == 0){
                 console.log("desligado");
-                $('#botao').prop("checked", true);
+                $('#botao').prop("checked", false);
             }else{
                 console.log("ligado");
-                $('#botao').prop("checked", false);
+                $('#botao').prop("checked", true);
             }
           },
           complete: function(){
