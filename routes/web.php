@@ -20,4 +20,6 @@ Route::get('api/store_user', 'Api@store_user');
 
 Route::resource('cadastro/', 'UsersController');
 
+Route::resource('botao/', 'BotaoController');
+
 Route::get('cadastro/mostrar', 'UsersController@mostrar');
