@@ -12,7 +12,7 @@ class BotaoController extends Controller
     public function index()
     {
 //        dd("deu");
-//        $botao = DB::table('botao')->get();
+       $botao = DB::table('botao')->get();
         return echo $botao;
     }
     /**
