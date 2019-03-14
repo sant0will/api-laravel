@@ -90,8 +90,17 @@ $(document).ready(function() {
         });
     }
     getData();
-});
-    
+});    
+</script>
+
+<script>
+    $('#checkbox1').change(function() {
+        $.ajax({
+        url:"/botao/ajax/register",
+        data: {
+            'botao': 1
+        }, 
+    });
 </script>
 
 <div class="center">
