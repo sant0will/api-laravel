@@ -19,3 +19,9 @@ Route::resource('users', 'ApiRestController', [
         'store'
 	]
 ]);
+
+Route::resource('botao', 'BotaoController', [
+	'only' => [
+        'index',
+	]
+]);
