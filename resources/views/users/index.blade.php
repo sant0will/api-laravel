@@ -71,17 +71,23 @@ input:checked[type="checkbox"]:after {
 </style>
 
 <script>
-    $.ajax({
-      url: "/botao/ajax",
-      cache: false,
-      success:function(d){
-        //var json = JSON.parse(d);
-        console.log(d);
-      },
-      complete: function(){
-           setTimeout(getData, 5000);
-      }
-    });
+$(document).ready(function() {
+    function getData() {
+        $.ajax({
+          url: "/botao/ajax",
+          cache: false,
+          success:function(d){
+            //var json = JSON.parse(d);
+            console.log(d);
+          },
+          complete: function(){
+               setTimeout(getData, 5000);
+          }
+        });
+    }
+    getData();
+});
+    
 </script>
 
 <div class="center">
