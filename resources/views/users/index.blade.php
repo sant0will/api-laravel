@@ -77,33 +77,32 @@ input:checked[type="checkbox"]:after {
               success:function(d){
                 //var json = JSON.parse(d);
                 if(d["result"][0]["botao"] == 0){
-                    console.log("desligado");
+                    // console.log("desligado");
                     $('#botao').prop("checked", false);
                 }else{
-                    console.log("ligado");
+                    // console.log("ligado");
                     $('#botao').prop("checked", true);
                 }
               },
               complete: function(){
-                   setTimeout(getData, 10000);
+                   setTimeout(getData, 500);
               }
             });
         }
         getData();
     });    
     
-    $('#checkbox1').change(function() {
+    function displayNote() {
+        //console.log("foi");
         $.ajax({
-        url:"/botao/ajax/register",
-        data: {
-            'botao': 1
-        }, 
-        success: function(d){
-            console.log(d);
-        }
-    });
+            url:"/ajax/register/",
+            success: function(d){
+                //console.log(d);
+            }
+        });
+    }
 </script>
 
 <div class="center">
-	<input type="checkbox" id="botao"> 
+	<input type="checkbox" id="botao" onClick="displayNote()"> 
 </div>

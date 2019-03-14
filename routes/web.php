@@ -32,6 +32,4 @@ Route::get('botao/ajax', function () {
     ]);
 });
 
-Route::get('botao/ajax/register', function ($botao) {
-    return $botao;
-});
+Route::get('ajax/register/', 'BotaoController@register');

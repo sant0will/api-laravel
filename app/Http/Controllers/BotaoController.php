@@ -21,9 +21,34 @@ class BotaoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function register()
     {
-        //
+        $botao = DB::table('botao')->first()->botao;
+
+        if($botao == 0){
+            $botao = 1;
+        }else{
+            $botao = 0;
+        }
+
+        DB::beginTransaction();
+
+        try {
+
+            DB::table('botao')
+                ->where('id', 1)
+                ->update(['botao' => $botao]);
+
+            DB::commit();
+
+            return 1;
+
+        } catch (\PDOException $e) {
+            DB::rollBack();
+
+            return 0;
+        }
+
     }
     /**
      * Store a newly created resource in storage.
