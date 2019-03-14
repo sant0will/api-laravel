@@ -11,6 +11,7 @@ class ApiRestController extends Controller
      */
     public function index()
     {
+       dd("deu");
        $botao = DB::table('botao')->get();
         dd($botao);
     }
