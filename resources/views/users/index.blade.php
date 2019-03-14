@@ -75,8 +75,8 @@ input:checked[type="checkbox"]:after {
       url: "/botao",
       cache: false,
       success:function(d){
-        var json = JSON.parse(d);
-        console.log(json);
+        //var json = JSON.parse(d);
+        console.log(d);
       }
     });
 </script>
