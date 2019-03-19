@@ -16,5 +16,11 @@ class DatabaseSeeder extends Seeder
             'id' => 1,
             'botao' => 0
         ]);
+
+        DB::table('botoes')->insert([
+            'id' => 1,
+            'botao' => 0
+        ]);
+    
     }
 }

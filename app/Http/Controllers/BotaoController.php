@@ -50,6 +50,27 @@ class BotaoController extends Controller
         }
 
     }
+
+    public function registerBotoes($id)
+    {
+        DB::beginTransaction();
+
+        try {
+            DB::table('botoes')
+                ->where('id', 1)
+                ->update(['botao' => $id]);
+
+            DB::commit();
+
+            return 1;
+
+        } catch (\PDOException $e) {
+            DB::rollBack();
+
+            return 0;
+        }
+
+    }
     /**
      * Store a newly created resource in storage.
      *

@@ -33,3 +33,18 @@ Route::get('botao/ajax', function () {
 });
 
 Route::get('ajax/register/', 'BotaoController@register');
+
+Route::get('botoes/',  function () {
+    return view('users.botoes');
+});
+
+
+Route::get('botoes/ajax', function () {
+    $response = DB::table('botoes')->get();
+    return response()->json([
+    'result' => 
+        $response
+    ]);
+});
+
+Route::get('ajax/{id}/registerBotoes/', 'BotaoController@registerBotoes');
